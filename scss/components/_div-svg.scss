@@ -1,0 +1,77 @@
+.div-svg{
+    display: flex;
+    justify-content: center;   
+}
+
+.pry{
+    color: #FFF;
+font-family: 'Roboto';
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+margin-top: -150px;
+margin-left: -250px;
+}
+
+.social-list-a{
+    margin-top: -120px;
+    margin-left: -120px;
+    display: flex;
+    justify-content: space-between;
+    
+    &__item{
+        height: 44px;
+        width: 44px;
+        margin-right: 10px;
+        background-color: rgba(255, 255, 255, 0.10);
+        border-radius: 50%;
+    }
+
+    &__link{
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 250ms var(--time-function), fill 250ms var(--time-function);
+        justify-content: center;
+        align-items: center;
+        animation-name: SLIA;
+    }
+
+    &__icon{
+        width: 20px;
+        height: 20px;
+        fill: #EEE;
+        animation-name: SLIA;
+    }
+}
+
+
+@keyframes SLIA{
+    0%{
+              
+    }
+
+    100%{
+        fill: #2196F3;
+    }
+}
+
+.social-list-icon-a:hover .social-list-link-a{
+    fill: #2196F3;
+}
+
+.social-list-link-a:hover,
+.social-list-link-a:focus{
+background-color: #2196F3;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+

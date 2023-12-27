@@ -1,0 +1,25 @@
+.activity-list{
+
+
+     &__list{
+        margin-bottom: 86px;
+    }
+
+    &__text{
+        position: relative;
+        bottom: 70px;
+        color: var(--second-text-color);
+        line-height: 68px;
+        letter-spacing: 2.54px;
+        background-color: var(--secondary-background-color);
+           background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            opacity: 0.9;
+    }
+
+}
+
