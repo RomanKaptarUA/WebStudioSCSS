@@ -1,0 +1,68 @@
+.header{
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid $primary-text-color;
+}
+
+.header-wrapper{
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid $primary-text-color;
+
+    &__logo{
+        color: $logo-color;
+    font-family: 'Raleway';
+    font-size: 26px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0,78px;
+    text-decoration: none;
+    }
+
+    &__web{
+        color: $background-button-color;
+    }
+}
+
+.site-nav{
+    &__list{
+        color: var(--title-text-color);
+        text-decoration: none;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.28px;
+        display: flex;
+        margin-left: 93px;
+    }
+
+    &__list:hover{
+        color: $background-button-color;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__item{
+
+    }
+
+    &__link{
+        text-decoration: none;
+        color: $title-text-color;
+        position: relative;
+    }
+
+    &__link:hover{
+        color: $background-button-color;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__link:focus{
+        color: $background-button-color;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.contacts-list{
+    padding-left: 344px;
+    list-style-type: none;
+    display: flex;
+}
