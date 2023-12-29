@@ -1,7 +1,7 @@
 
 .team{
 
-    color: var(--backgroun-team-color);
+    color: $backgroun-team-color;
     padding-top: 0px;
     padding-bottom: 94px;
 
@@ -38,7 +38,7 @@
     }
 
     &__position{
-        color: var(--primary-text-color);
+        color: $primary-text-color;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.48px;

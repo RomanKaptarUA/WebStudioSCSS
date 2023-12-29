@@ -39,3 +39,12 @@ body{
    img{
     display: block;
 }
+
+li{
+    list-style: none;
+}
+
+span{
+    color: #2196F3;
+        color: var(--second-text-color);
+    }

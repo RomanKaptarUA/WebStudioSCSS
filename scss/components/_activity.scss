@@ -8,10 +8,10 @@
     &__text{
         position: relative;
         bottom: 70px;
-        color: var(--second-text-color);
+        color: $second-text-color;
         line-height: 68px;
         letter-spacing: 2.54px;
-        background-color: var(--secondary-background-color);
+        background-color: $secondary-background-color;
            background-size: cover;
             background-position: center;
             display: flex;
