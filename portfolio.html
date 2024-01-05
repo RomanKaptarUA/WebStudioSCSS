@@ -15,33 +15,44 @@
   
 
 <body>
-  <header class="header container">
-    <div class="header-wrapper">
-        <a class="logo" href="./index.html">
-            <span class="web1">Web</span>Studio</a>
-     <nav class="site-nav">
-            <ul class="site-list">
-                <li class="header-list-item">
-                    <a class="site-link header-link" href="./index.html">Студія</a>
-                </li>
-                <li class="header-list-item">
-                    <a class="site-link header-link current" href="./portfolio.html">Портфоліо</a>
-                <li>
-                <li class="header-list-item">
-                    <a class="site-link header-link" href="#">Контакти</a>
-                </li>
-            </ul>
-    </nav>
-            <ul class="contacts-list">
-                <li class="header-list-item">
-                <a class="site-link" href="malito.info@devstudio.com">info@devstudio.com</a>
-                </li>
-                <li class="header-list-item">
-                <a class="site-link" href="tel +38 096 111 11 11">+38 096 111 11 11</a>
-                </li>
-        </ul>
-    </div>
+    <header class="header container">
+      <div class="header-wrapper">
+          <a class="header-wrapper__logo" href="./index.html">
+              <span class="header-wrapper__web">Web</span>Studio</a>
+       <nav class="site-nav">
+              <ul class="site-nav__list">
+                  <li class="site-nav__item">
+                      <a class="site-nav__link header-link current" href="./index.html">Студія</a>
+                  </li>
+                  <li class="site-nav__item">
+                      <a class="site-nav__link header-link" href="./portfolio.html">Портфоліо</a>
+                  <li>
+                  <li class="site-nav__item">
+                      <a class="site-nav__link header-link" href="#">Контакти</a>
+                  </li>
+              </ul>
+      </nav>
+              <ul class="contacts-list">
+                  <li class="contacts-list__item">
+                  <a class="contacts-list__number" href="malito.info@devstudio.com">
+                      <svg class="icon contacts-list__post">
+                          <use href="./images/symbol-defs.svg#icon-envelope-hover"></use>
+                      </svg>
+                      <p>info@devstudio.com</p>
+                  </a>
+                  </li>
+                  <li class="contacts-list__item">
+                  <a class="contacts-list__number" href="tel +38 096 111 11 11">
+                      <svg class="icon contacts-list__phone">
+                          <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                      </svg>
+                      <p>+38 096 111 11 11</p>
+                  </a>
+                  </li>
+          </ul>
+      </div>
     
+    </header>
     <section class="portfolio">
     
         <ul class="ul-portfolio">
