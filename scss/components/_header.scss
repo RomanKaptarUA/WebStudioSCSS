@@ -1,5 +1,5 @@
 .header{
-    padding-top: 17px;
+    padding-top: 34px;
     padding-bottom: 17px;
     border-bottom: 1px solid $primary-text-color;
 }
@@ -11,9 +11,9 @@
 }
 
 .header-wrapper{
-    padding-top: 17px;
-    padding-bottom: 17px;
-    border-bottom: 1px solid $primary-text-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     &__logo{
         color: $logo-color;
@@ -31,6 +31,7 @@
 }
 
 .site-nav{
+
     &__list{
         color: $title-text-color;
         text-decoration: none;
@@ -39,56 +40,42 @@
         letter-spacing: 0.28px;
         display: flex;
         margin-left: 93px;
-    }
-
-    &__list:hover{
-        color: $background-button-color;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &__item{
-
+        &:hover,
+        &:focus{
+            color: $background-button-color;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
     }
 
     &__link{
         text-decoration: none;
         color: $title-text-color;
         position: relative;
-    }
-
-    &__link:hover{
-        color: $background-button-color;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &__link:focus{
-        color: $background-button-color;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus{
+            color: $background-button-color;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
     }
 }
 
 .contacts-list{
-    padding-left: 344px;
     list-style-type: none;
     display: flex;
 
-    &__item{
 
-    }
 
     &__number{
         animation-name: Header;
     }
 
     &__post{
-        margin-right: 430px;
         width: 15px;
         height: 15px;    
         animation-name: Header;
-    }
-
-    &__post:hover{
-        fill: #2196F3;
+        &__:hover{
+            fill: #2196F3;
+        }
     }
 
     &__phone{
@@ -106,7 +93,7 @@
 
 .contacts-list__number:hover .contacts-list__phone{
     fill: #2196F3;
-    transition: color 250ms var(--time-function);
+    transition: color 250ms $time-function;
 
 }
 
@@ -117,7 +104,7 @@
 
     100%{
         fill: #2196F3;
-        transition: color 250ms var(--time-function);
+        transition: color 250ms $time-function;
     }
 }
 

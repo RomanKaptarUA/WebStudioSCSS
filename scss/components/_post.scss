@@ -1,8 +1,8 @@
-
-
 .post{
     text-align: center;
-    background-color: $secondary-background-color;
+    background-image: url(/images/imgoverlay.png);
+    padding-top: 200px;
+    padding-bottom: 200px;
     
     &__title{
         color: #FFF;
@@ -14,8 +14,7 @@ font-weight: 900;
 line-height: 60px; /* 136.364% */
 letter-spacing: 2.64px;
 text-transform: uppercase;
-padding-top: 200px;
-padding-bottom: 30px;
+margin-bottom: 30px;
     }
 
     &__button{
@@ -33,4 +32,6 @@ font-style: normal;
 font-weight: 700;
 line-height: 30px; /* 187.5% */
 letter-spacing: 0.96px;
+border: none;
+}
 }

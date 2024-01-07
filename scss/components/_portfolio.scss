@@ -1,146 +1,123 @@
-.header{
-    padding-top: 17px;
-    padding-bottom: 17px;
-    border-bottom: 1px solid $primary-text-color;
+.work-block {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
-.header-link:hover,
-.header-link:focus{
-    color: $background-button-color;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-wrapper{
-    padding-top: 17px;
-    padding-bottom: 17px;
-    border-bottom: 1px solid $primary-text-color;
-
-    &__logo{
-        color: $logo-color;
-    font-family: 'Raleway';
-    font-size: 26px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0,78px;
-    text-decoration: none;
-    }
-
-    &__web{
-        color: $background-button-color;
-    }
-}
-
-.site-nav{
-    &__list{
-        color: $title-text-color;
-        text-decoration: none;
-        font-weight: 500;
-        line-height: normal;
-        letter-spacing: 0.28px;
-        display: flex;
-        margin-left: 93px;
-    }
-
-    &__list:hover{
-        color: $background-button-color;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &__item{
-
-    }
-
-    &__link{
-        text-decoration: none;
-        color: $title-text-color;
-        position: relative;
-    }
-
-    &__link:hover{
-        color: $background-button-color;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &__link:focus{
-        color: $background-button-color;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-}
-
-.contacts-list{
-    padding-left: 344px;
-    list-style-type: none;
+.filter {
     display: flex;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: $second-text-color;
+    letter-spacing: 0.03em;
+    border-radius: 4px;
 
-    &__item{
+    &__button {
+        padding: 6px 22px;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 250ms $time-function,
+            box-shadow 250ms $time-function, color 250ms $time-function;
 
+        &--current {
+            background-color: $background-button-color;
+            color: $second-text-color;
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+                0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+            border-radius: 4px;
+        }
     }
 
-    &__number{
-        animation-name: Header;
-    }
-
-    &__post{
-        margin-right: 430px;
-        width: 15px;
-        height: 15px;    
-        animation-name: Header;
-    }
-
-    &__post:hover{
-        fill: #2196F3;
-    }
-
-    &__phone{
-        padding-right: 40px;
-        width: 150px;
-        height: 15px;
-        animation-name: Header;
-    }
-}
-
-.contacts-list__item .contacts-list__number{
-    transition: fill 250ms var(--time-function);
-}
-
-
-.contacts-list__number:hover .contacts-list__phone{
-    fill: #2196F3;
-    transition: color 250ms var(--time-function);
-
-}
-
-@keyframes Header{
-    0%{
-
-    }
-
-    100%{
-        fill: #2196F3;
-        transition: color 250ms var(--time-function);
+    &__button-line {
+        background-color: #f5f4fa;
+        margin-left: 8px;
     }
 }
 
-.header-list-item:not(:last-child){
-  margin-right: 50px;
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-right: -30px;
+
+    &__link {
+        display: block;
+    }
+
+    &__item {
+        display: block;
+        margin-top: 30px;
+        margin-right: 30px;
+        flex-basis: calc(100% / 3 - 30px);
+    }
+
+    &__title {
+        display: block;
+        padding: 20px 24px;
+        border-right: 1px solid #eeeeee;
+        border-bottom: 1px solid #eeeeee;
+        border-left: 1px solid #eeeeee;
+    }
+
+    &__name {
+        margin-bottom: 4px;
+        color: $title-text-color;
+    }
+
+    &__text {
+        letter-spacing: 0.03em;
+        color: #757575;
+    }
 }
 
-.site-nav__link.current::after{
-    content: '';
-    display: block;
-    background-color: $background-button-color;
-    height: 4px;
-    width: 100%;
-    border-radius: 2px;
-    position: absolute;
-    left: 0;
-    bottom: -26px;
-    transition: background-color 1000ms ease-in-out; 
- }
+.content__link:hover,
+.content__link:focus {
+    background: #fff;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 1px RGB(0 0 0 / 12%),
+        0px 4px 4px RGB(0 0 0 / 6%),
+        1px 4px 6px RGB(0 0 0 / 16%);;
+}
 
- .site-nav__link:hover.current::after{
-    background-color: $background-color-auto;
-    transition: background-color 1000ms ease-in-out;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.product-thumb {
+    position: relative;
+    overflow: hidden;
 
- }
+    &__actions {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        transform: translateY(100%);
+        padding: 63px 24px;
+        font-size: 18px;
+        letter-spacing: 0.03em;
+        line-height: 1.6;
+        background: #2196f3;
+        color: #ffffff;
+        opacity: 0;
+        transition: transform 250ms linear, opacity 250ms linear;
+    }
+}
+
+.content__link:hover .product-thumb__actions {
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.filter__button:focus,
+.filter__button:hover {
+    color: #ffffff;
+}
+
+.filter__button:focus,
+.filter__button:hover {
+    background-color: #2196f3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}

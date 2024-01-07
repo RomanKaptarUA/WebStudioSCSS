@@ -41,3 +41,29 @@
     cursor: pointer;
     text-decoration: none;
 }
+.address{
+    display: flex;
+    flex-direction: column;
+}
+.footer-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.social-list-a{
+    display: flex;
+    gap: 10px;
+}
+.social-list-a__item{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-list-a__icon{
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+}

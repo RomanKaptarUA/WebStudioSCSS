@@ -62,12 +62,12 @@ margin-left: -250px;
     }
 }
 
-.social-list-icon-a:hover .social-list-link-a{
+.social-list-a__icon:hover .social-list-a__link{
     fill: #2196F3;
 }
 
-.social-list-link-a:hover,
-.social-list-link-a:focus{
+.social-list-a__link:hover,
+.social-list-a__link:focus{
 background-color: #2196F3;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
