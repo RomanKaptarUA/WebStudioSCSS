@@ -39,7 +39,7 @@
         line-height: normal;
         letter-spacing: 0.28px;
         display: flex;
-        margin-left: 93px;
+        margin-right: 290px;
         &:hover,
         &:focus{
             color: $background-button-color;
@@ -51,6 +51,7 @@
         text-decoration: none;
         color: $title-text-color;
         position: relative;
+        padding-right: 40px;
         &:hover,
         &:focus{
             color: $background-button-color;
@@ -60,10 +61,11 @@
 }
 
 .contacts-list{
-    list-style-type: none;
+    list-style: none;
     display: flex;
 
-
+    &__icon{
+    }
 
     &__number{
         animation-name: Header;

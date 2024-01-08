@@ -67,11 +67,11 @@
     
 
 &__link{
-    width: 44px;
-    height: 44px;
+    margin-left: 22px;
     border-radius: 50%;
     transition: background-color 250ms var(--time-function), fill 250ms var(--time-function);
     animation-name: SLL;
+    
 }
 
 &__icon{
