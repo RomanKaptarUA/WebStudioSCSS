@@ -1,10 +1,11 @@
 .post{
     text-align: center;
     background-image: url(/images/imgoverlay.png);
+    background-repeat: no-repeat;
     padding-top: 118px;
     padding-bottom: 118px;
 } 
-    .post-title{
+    .post__title{
         color: #FFF;
 text-align: center;
 font-family: 'Roboto';
@@ -17,14 +18,31 @@ text-transform: uppercase;
 margin-bottom: 30px;
     }
 
-.post-button{
+.post__button{
     padding: 10px 24px;
     background-color:  $background-button-color;
     cursor: pointer;
     font-size: 16px;
     font-weight: 700;
+    font-family: 'Roboto' sans-serif;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
+@media screen and (min-width:768px){
+      
+}
+
+
+@media screen and (min-width: 1200px){
+    .post{
+        padding-top: 100px;
+        padding-bottom: 200px;
+    }
+
+    .post__title{
+        padding: 10px 32px;
+    }
+}
 
 
 .post{
@@ -47,20 +65,6 @@ margin-bottom: 30px;
     }
 
     &__button{
-        width: 216px;
-        height: 50px;
-        flex-shrink: 0;
-        border-radius: 4px;
-        background-color:  $background-button-color;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-        color: #FFF;
-text-align: center;
-font-family: Roboto;
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: 30px;
-letter-spacing: 0.96px;
-border: none;
+   @extend: %button;
 }
 }
