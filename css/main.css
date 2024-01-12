@@ -228,14 +228,13 @@ span {
   background-image: url(/images/imgoverlay.png);
   background-repeat: no-repeat;
   padding-top: 118px;
-  padding-bottom: 118px;
 }
 
 .post__title {
   color: #FFF;
   text-align: center;
   font-family: "Roboto";
-  font-size: 44px;
+  font-size: 26px;
   font-style: normal;
   font-weight: 900;
   line-height: 162%;
@@ -263,6 +262,7 @@ span {
   }
   .post__title {
     padding: 10px 32px;
+    font-size: 44px;
   }
 }
 .post {
