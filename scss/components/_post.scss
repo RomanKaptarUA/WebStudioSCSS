@@ -37,6 +37,7 @@ margin-bottom: 30px;
     .post{
         padding-top: 100px;
         padding-bottom: 200px;
+        background-repeat: no-repeat;
     }
 
     .post__title{
@@ -64,7 +65,10 @@ text-transform: uppercase;
 margin-bottom: 30px;
     }
 
-    &__button{
-   @extend: %button;
+
 }
-}
+
+
+.post__button{
+    @extend %button;
+ }
