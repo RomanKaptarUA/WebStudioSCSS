@@ -683,20 +683,23 @@ span {
   line-height: normal;
   letter-spacing: 0.48px;
   list-style: none;
-  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
 }
 .team__card {
-  width: 270px;
+  width: 480px;
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-}
-.team__card:not(:last-child) {
-  margin-right: 30px;
+  margin-top: 30px;
+  margin: 0 auto;
 }
 .team__name {
   margin-top: 30px;
@@ -765,6 +768,107 @@ span {
     -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+}
+
+@keyframes SLL {
+  100% {
+    fill: #ffffff;
+    background-color: #2196F3;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.team {
+  background-color: #F5F4FA;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team__title {
+  color: #212121;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 36px;
+}
+.team__list {
+  color: #212121;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  list-style: none;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.team__card {
+  width: 480px;
+  border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.team__card:not(:last-child) {
+  margin-right: 30px;
+}
+.team__name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #212121;
+}
+.team__position {
+  color: #757575;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.48px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.card {
+  width: 480px;
+}
+
+.social-list {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.social-list__link {
+  margin-left: 22px;
+  border-radius: 50%;
+  -webkit-transition: background-color 250ms var(--time-function), fill 250ms var(--time-function);
+  transition: background-color 250ms var(--time-function), fill 250ms var(--time-function);
+  -webkit-animation-name: SLL;
+          animation-name: SLL;
+}
+.social-list__icon {
+  fill: #757575;
+  width: 20px;
+  height: 20px;
+  -webkit-animation-name: SLL;
+          animation-name: SLL;
+}
+
+.social-list__link:hover .social-list__icon {
+  fill: #ffffff;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-list__link:hover,
+.social-list__link:focus {
+  background-color: #2196F3;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @keyframes SLL {
