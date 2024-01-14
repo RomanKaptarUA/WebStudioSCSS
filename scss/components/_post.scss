@@ -1,74 +1,75 @@
-.post{
-    text-align: center;
-    background-image: url(/images/imgoverlay.png);
-    background-repeat: no-repeat;
-    padding-top: 118px;
+.post{ 
+    text-align: center; 
+    background-image: url(../images/imgoverlay.png); 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    padding-top: 118px; 
+}  
+    .post__title{ 
+        color: #FFF; 
+text-align: center; 
+font-family: 'Roboto'; 
+font-size: 26px; 
+font-style: normal; 
+font-weight: 900; 
+line-height: 162%; 
+letter-spacing: 2.64px; 
+text-transform: uppercase; 
+margin-bottom: 30px; 
+    } 
+ 
+.post__button{ 
+    padding: 10px 24px; 
+    background-color:  $background-button-color; 
+    cursor: pointer; 
+    font-size: 16px; 
+    font-weight: 700; 
+    font-family: 'Roboto' sans-serif; 
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); 
 } 
-    .post__title{
-        color: #FFF;
-text-align: center;
-font-family: 'Roboto';
-font-size: 26px;
-font-style: normal;
-font-weight: 900;
-line-height: 162%;
-letter-spacing: 2.64px;
-text-transform: uppercase;
-margin-bottom: 30px;
-    }
-
-.post__button{
-    padding: 10px 24px;
-    background-color:  $background-button-color;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 700;
-    font-family: 'Roboto' sans-serif;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-}
-
-@media screen and (min-width:768px){
-      
-}
-
-
-@media screen and (min-width: 1200px){
-    .post{
-        padding-top: 100px;
-        padding-bottom: 200px;
-        background-repeat: no-repeat;
-    }
-
-    .post__title{
-        padding: 10px 32px;
-        font-size: 44px;
-    }
-}
-
-
-.post{
-    text-align: center;
-    background-image: url(/images/imgoverlay.png);
-    padding-top: 118px;
-    padding-bottom: 118px;
-    
-    &__title{
-        color: #FFF;
-text-align: center;
-font-family: 'Roboto';
-font-size: 44px;
-font-style: normal;
-font-weight: 900;
-line-height: 60px; /* 136.364% */
-letter-spacing: 2.64px;
-text-transform: uppercase;
-margin-bottom: 30px;
-    }
-
-
-}
-
-
-.post__button{
-    @extend %button;
+ 
+@media screen and (min-width:768px){ 
+       
+} 
+ 
+ 
+@media screen and (min-width: 1200px){ 
+    .post{ 
+        padding-top: 100px; 
+        padding-bottom: 200px; 
+        background-repeat: no-repeat; 
+    } 
+ 
+    .post__title{ 
+        padding: 10px 32px; 
+        font-size: 44px; 
+    } 
+} 
+ 
+ 
+.post{ 
+    text-align: center; 
+    background-image: url(/images/imgoverlay.png); 
+    padding-top: 118px; 
+    padding-bottom: 118px; 
+     
+    &__title{ 
+        color: #FFF; 
+text-align: center; 
+font-family: 'Roboto'; 
+font-size: 44px; 
+font-style: normal; 
+font-weight: 900; 
+line-height: 60px; /* 136.364% */ 
+letter-spacing: 2.64px; 
+text-transform: uppercase; 
+margin-bottom: 30px; 
+    } 
+ 
+ 
+} 
+ 
+ 
+.post__button{ 
+    @extend %button; 
  }
