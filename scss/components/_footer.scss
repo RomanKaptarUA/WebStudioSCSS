@@ -1,5 +1,11 @@
-.page-footer{
+.div-footer{
     display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.page-footer{
+
     
 padding-top: 60px; 
 background-color: $secondary-background-color; 
@@ -21,8 +27,7 @@ margin-bottom: 9px;
 .footer-logo{ 
 
     margin-bottom: 22px;
-    display: flex;
-    justify-content: center;
+
 font-family: 'Raleway'; 
 font-size: 26px; 
 font-weight: 700; 
