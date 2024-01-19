@@ -156,6 +156,10 @@ letter-spacing: 1.08px;
 
 @media screen and (min-width:1200px) {
     
+.container{
+    min-width: 1200px;
+}
+
 
 .clients{ 
     margin-top: 94px; 
@@ -183,8 +187,12 @@ letter-spacing: 1.08px;
     transition: background-color 250ms var(--time-function), fill 250ms var(--time-function); 
  
 &__item{ 
-    margin-left: 30px; 
+    
 } 
+
+.clients-list__item:nth-child(6){
+margin-left: -26px;
+}
  
 &__link{ 
     width: 170px; 
