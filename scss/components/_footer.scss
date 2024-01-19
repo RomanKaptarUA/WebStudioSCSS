@@ -6,7 +6,8 @@
 
 .page-footer{
 
-    
+display: flex;
+
 padding-top: 60px; 
 background-color: $secondary-background-color; 
 white-space: 80px; 
@@ -25,7 +26,10 @@ margin-bottom: 9px;
 } 
 
 .footer-logo{ 
-
+    align-items: center;
+    position: relative;
+    left: 180px;
+    bottom: 100px;
     margin-bottom: 22px;
 
 font-family: 'Raleway'; 
@@ -37,7 +41,6 @@ color: $background-button-color;
 } 
 .web{ 
     margin-bottom: 20px;
-    display: flex;
 
 font-family: 'Raleway'; 
     font-size: 26px; 
@@ -142,6 +145,12 @@ border: none;
 
 
 
+@media screen and (min-width:768px) {
+    
+}
+
+
+
 
 @media screen and (min-width:1200px) {
     
@@ -169,6 +178,9 @@ border: none;
 } 
  
 .footer-logo{ 
+    position: relative;
+    bottom: 50px;
+    left: 140px;
     font-family: 'Raleway'; 
     font-size: 26px; 
     font-weight: 700; 
@@ -177,6 +189,7 @@ border: none;
     color: $background-button-color; 
 } 
 .web{ 
+
     font-family: 'Raleway'; 
         font-size: 26px; 
         font-weight: 700; 

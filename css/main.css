@@ -1002,13 +1002,20 @@ span {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .team__card {
     width: 354px;
     position: relative;
     right: 75px;
+    left: 10px;
+    position: relative;
   }
   .team .card {
+    margin-left: 50px;
     width: 270px;
     border-radius: 0px 0px 4px 4px;
     background-color: #ffffff;
@@ -1127,6 +1134,10 @@ span {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .team__card {
     width: 270px;
@@ -1492,6 +1503,9 @@ span {
 }
 
 .page-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding-top: 60px;
   background-color: #2f303A;
   white-space: 80px;
@@ -1510,6 +1524,12 @@ span {
 }
 
 .footer-logo {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  left: 180px;
+  bottom: 100px;
   margin-bottom: 22px;
   font-family: "Raleway";
   font-size: 26px;
@@ -1521,9 +1541,6 @@ span {
 
 .web {
   margin-bottom: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   font-family: "Raleway";
   font-size: 26px;
   font-weight: 700;
@@ -1673,6 +1690,9 @@ span {
     margin-bottom: 9px;
   }
   .footer-logo {
+    position: relative;
+    bottom: 50px;
+    left: 140px;
     font-family: "Raleway";
     font-size: 26px;
     font-weight: 700;
