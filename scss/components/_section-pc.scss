@@ -20,6 +20,7 @@ letter-spacing: 1.08px;
 .clients-list{ 
     display: flex;
     flex-wrap: wrap; 
+    justify-content: center;
     margin-left: -30px; 
     margin-bottom: 94px; 
     transition: background-color 250ms var(--time-function), fill 250ms var(--time-function); 
