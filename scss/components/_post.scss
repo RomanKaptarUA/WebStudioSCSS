@@ -27,9 +27,22 @@ margin-bottom: 30px;
     font-family: 'Roboto' sans-serif; 
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); 
 } 
- 
+
+
+@media (min-device-pixel-ratio: 2),
+(min-device-pixel-ratio: 2),
+ (min-resolution: 192dpi),
+ (min-resolution: 2dppx){
+    .post{
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/png);
+    }
+ }
+
+
 @media screen and (min-width:768px){ 
-       
+    .post{
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/webp);
+    }  
 } 
  
  
