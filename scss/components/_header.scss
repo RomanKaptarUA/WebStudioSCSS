@@ -153,12 +153,6 @@
     transition-duration: 250ms;
  }
 
- @media (min-width:768px){
-    .mobile-menu{
-        display: none;
-    }
- }
-
  .menu-container.is-open{
     transform: translateX(0%);
  }
