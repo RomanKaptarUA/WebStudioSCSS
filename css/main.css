@@ -248,11 +248,6 @@ span {
           transition-duration: 250ms;
 }
 
-@media (min-width: 768px) {
-  .mobile-menu {
-    display: none;
-  }
-}
 .menu-container.is-open {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
@@ -1353,7 +1348,7 @@ span {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .benefits-list__block::before {
     background-image: url(./images/benefits.webp);
   }
@@ -1369,16 +1364,16 @@ span {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .benefits-list__block::before {
-    background-image: url(./images/benefits.webp);
+    background-image: url(../images/benefits.webp);
   }
   .benefits-list__block:nth-child(2) {
-    background-image: url(./images/banefits.webp);
+    background-image: url(../images/benefits.webp);
   }
   .benefits-list__block:nth-child(3) {
-    background-image: url(./images/banefits.webp);
+    background-image: url(../images/benefits.webp);
   }
   .benefits-list__block:nth-child(4) {
-    background-image: url(./images/banefits.webp);
+    background-image: url(../images/benefits.webp);
   }
 }
 @media screen and (min-width: 768px) {
