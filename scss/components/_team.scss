@@ -261,6 +261,12 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     padding-top: 94px; 
     padding-bottom: 94px; 
  
+
+       &__images{
+      position: relative;
+      right: 50px;
+       }   
+
        &__title{ 
         color: #212121;  
         text-align: center;   
