@@ -463,7 +463,7 @@ span {
 }
 .post {
   text-align: center;
-  background-image: url(/images/imgoverlay.png);
+  background-image: url(../images/imgoverlay.png);
   padding-top: 118px;
   padding-bottom: 118px;
 }
@@ -676,6 +676,7 @@ span {
 
 @media screen and (min-width: 1200px) {
   .activity {
+    display: block;
     padding-top: 94px;
     padding-bottom: 100px;
   }
@@ -1473,7 +1474,7 @@ span {
   width: 100%;
   height: 120px;
   background-color: #F5F4FA;
-  background-image: url(../images/antennas.png);
+  background-image: url(../images/work/antennas.png);
   background-repeat: no-repeat;
   background-size: 70px;
   background-position: center;
