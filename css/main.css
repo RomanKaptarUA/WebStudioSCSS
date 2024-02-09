@@ -675,6 +675,9 @@ span {
 }
 
 @media screen and (min-width: 1200px) {
+  .ac-card {
+    width: 370px;
+  }
   .activity {
     display: block;
     padding-top: 94px;
@@ -1461,7 +1464,7 @@ span {
   height: 120px;
   border-radius: 4px;
   background-color: #F5F4FA;
-  background-image: url(../../images/antenna.png);
+  background-image: url(../../images/antennas.png);
   background-size: 70px;
   background-repeat: no-repeat;
   background-position: center;
@@ -1479,7 +1482,7 @@ span {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .benefits-list__block::before {
-    background-image: url(../../images/antenna.png);
+    background-image: url(../../images/antennas.png);
   }
   .benefits-list__block:nth-child(2)::before {
     background-image: url(../../images/clock\ 1.png);
@@ -1493,7 +1496,7 @@ span {
 }
 @media (min-width: 768px) {
   .benefits-list__block::before {
-    background-image: url(../../images/antenna.png);
+    background-image: url(../../images/antennas.png);
   }
   .benefits-list__block:nth-child(2)::before {
     background-image: url(../../images/clock\ 1.png);
@@ -1507,7 +1510,7 @@ span {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .benefits-list__block::before {
-    background-image: url(../../images/antenna.png);
+    background-image: url(../../images/antennas.png);
   }
   .benefits-list__block:nth-child(2)::before {
     background-image: url(../../images/clock\ 1.png);
