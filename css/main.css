@@ -1434,93 +1434,106 @@ span {
   padding-bottom: 60px;
 }
 
-.benefits-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .benefits-list__name {
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 700;
   color: #212121;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  margin-top: 30px;
   text-align: center;
 }
 
 .benefits-list__text {
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  line-height: 1.71;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+  margin-top: 10px;
 }
 
 .benefits-list__block {
   max-width: 450px;
+  min-width: 290px;
   margin-bottom: 30px;
 }
-
 .benefits-list__block::before {
   content: "";
   display: block;
   width: 100%;
   height: 120px;
+  border-radius: 4px;
   background-color: #F5F4FA;
-  background-image: url(../images/work/antennas.png);
-  background-repeat: no-repeat;
+  background-image: url(../../images/antenna.png);
   background-size: 70px;
+  background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 30px;
+}
+.benefits-list__block:nth-child(2)::before {
+  background-image: url(../../images/clock\ 1.png);
+}
+.benefits-list__block:nth-child(3)::before {
+  background-image: url(../../images/diagram\ 1.png);
+}
+.benefits-list__block:last-child::before {
+  background-image: url(../../images/astronaut\ 1.png);
+  margin-bottom: 0;
 }
 
-@media screen and (min-width: 768px), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .benefits-list__block::before {
-    background-image: url(./images/benefits.webp);
+    background-image: url(../../images/antenna.png);
   }
-  .benefits-list__block:nth-child(2) {
-    background-image: url(./images/banefits.webp);
+  .benefits-list__block:nth-child(2)::before {
+    background-image: url(../../images/clock\ 1.png);
   }
-  .benefits-list__block:nth-child(3) {
-    background-image: url(./images/banefits.webp);
+  .benefits-list__block:nth-child(3)::before {
+    background-image: url(../../images/diagram\ 1.png);
   }
-  .benefits-list__block:nth-child(4) {
-    background-image: url(./images/banefits.webp);
+  .benefits-list__block:last-child::before {
+    background-image: url(../../images/astronaut\ 1.png);
+  }
+}
+@media (min-width: 768px) {
+  .benefits-list__block::before {
+    background-image: url(../../images/antenna.png);
+  }
+  .benefits-list__block:nth-child(2)::before {
+    background-image: url(../../images/clock\ 1.png);
+  }
+  .benefits-list__block:nth-child(3)::before {
+    background-image: url(../../images/diagram\ 1.png);
+  }
+  .benefits-list__block:last-child::before {
+    background-image: url(../../images/astronaut\ 1.png);
   }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .benefits-list__block::before {
-    background-image: url(../images/benefits.webp);
+    background-image: url(../../images/antenna.png);
   }
-  .benefits-list__block:nth-child(2) {
-    background-image: url(../images/benefits.webp);
+  .benefits-list__block:nth-child(2)::before {
+    background-image: url(../../images/clock\ 1.png);
   }
-  .benefits-list__block:nth-child(3) {
-    background-image: url(../images/benefits.webp);
+  .benefits-list__block:nth-child(3)::before {
+    background-image: url(../../images/diagram\ 1.png);
   }
-  .benefits-list__block:nth-child(4) {
-    background-image: url(../images/benefits.webp);
+  .benefits-list__block:last-child::before {
+    background-image: url(../../images/astronaut\ 1.png);
+  }
+}
+@media screen and (min-width: 480px) {
+  .benefits-list__block {
+    max-width: 450px;
+    min-width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
   .benefits-list__block {
-    width: 354px;
+    max-width: 354px;
+    min-width: 354px;
   }
   .benefits-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: justify;
@@ -1533,184 +1546,12 @@ span {
     padding-top: 94px;
     padding-bottom: 94px;
   }
-  .benenefits-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-  .benefits-list__item {
-    width: 270px;
+  .benefits-list__block {
+    max-width: 270px;
+    min-width: 270px;
   }
   .benefits-list__name {
-    padding-top: 30px;
-    padding-bottom: 10px;
-    color: #212121;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
     text-align: left;
-  }
-  .benefits-list__text {
-    font-size: 14px;
-    line-height: 1.71;
-  }
-  .benefits-list__block {
-    width: 270px;
-    height: 120px;
-  }
-  .benefits-list__block::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 120px;
-    background-color: #F5F4FA;
-    background-image: url(../images/antennas.png);
-    background-repeat: no-repeat;
-    background-size: 70px;
-    background-position: center;
-  }
-  .benefits-list__block:nth-child(2)::before {
-    background-image: url(../images/clocks.png);
-  }
-  .benefits-list__block:nth-child(3)::before {
-    background-image: url(../images/diagrams.png);
-  }
-  .benefits-list__block:nth-child(4)::before {
-    background-image: url(../images/astronauts.png);
-  }
-  .benefits-list__block:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .benefits {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  .benefits-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .benefits-list__name {
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 700;
-    color: #212121;
-    text-align: center;
-  }
-  .benefits-list__text {
-    font-weight: 400;
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    line-height: 1.71;
-  }
-  .benefits-list__block {
-    max-width: 450px;
-    margin-bottom: 30px;
-  }
-  .benefits-list__block::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 120px;
-    background-color: #F5F4FA;
-    background-image: url(../images/antennas.png);
-    background-repeat: no-repeat;
-    background-size: 70px;
-    background-position: center;
-    margin-bottom: 30px;
-  }
-}
-@media screen and (min-width: 1200px) and (min-width: 768px) {
-  .benefits-list__block {
-    width: 354px;
-  }
-  .benefits-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-@media screen and (min-width: 1200px) and (min-width: 1200px) {
-  .benefits {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-  .benenefits-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-  .benefits-list__item {
-    width: 270px;
-  }
-  .benefits-list__name {
-    padding-top: 30px;
-    padding-bottom: 10px;
-    color: #212121;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-    text-align: left;
-  }
-  .benefits-list__text {
-    font-size: 14px;
-    line-height: 1.71;
-  }
-  .benefits-list__block {
-    width: 270px;
-    height: 120px;
-  }
-  .benefits-list__block::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 120px;
-    background-color: #F5F4FA;
-    background-image: url(../images/antennas.png);
-    background-repeat: no-repeat;
-    background-size: 70px;
-    background-position: center;
-  }
-  .benefits-list__block:nth-child(2)::before {
-    background-image: url(../images/clocks.png);
-  }
-  .benefits-list__block:nth-child(3)::before {
-    background-image: url(../images/diagrams.png);
-  }
-  .benefits-list__block:nth-child(4)::before {
-    background-image: url(../images/astronauts.png);
-  }
-  .benefits-list__block:not(:last-child) {
-    margin-right: 30px;
   }
 }
 .page-footer {
